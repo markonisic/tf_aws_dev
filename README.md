@@ -7,6 +7,7 @@ a route table, SSH connection configured and SSH parameteres written in the
 local SSH config.
 
 - EC2 instance will be deployed with an Ubuntu 18.04 image,
-and running Docker.
+and running Docker(Bash script to install Docker added in the userdata.tpl).
 - Local SSH pub key will be added to the EC2 instance and the login parameters
-will be written in the local SSH config.
+will be written in the local SSH config(included provisioner in the main.tf and
+a separate ssh-config.tpl file).
